@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package estructuras_seleccion;
+package ejemplos_y_apuntes;
 
 import javax.swing.JOptionPane;
 
@@ -10,7 +10,7 @@ import javax.swing.JOptionPane;
  *
  * @author dario
  */
-public class CalculadoraSwitch {
+public class Calculadora {
 
     public static void main(String[] args) {
         double resultado = 0;
@@ -34,32 +34,26 @@ public class CalculadoraSwitch {
 
         // Lógica de la aplicación
         // Si es opción 1 --> sumar
-        switch (opcion) {
-            case "1":
-                resultado = operando1 + operando2;
-                System.out.printf("El resultado es %.2f", resultado);
-                break;
-            case "2":
-                // Si es opción 2 --> restar
+        if (opcion.equals("1")) {
+            resultado = operando1 + operando2;
+            System.out.printf("El resultado es %.2f", resultado);
+        } else if (opcion.equals("2")) {
+            // Si es opción 2 --> restar
 
-                resultado = operando1 - operando2;
-                System.out.printf("El resultado es %.2f", resultado);
-                break;
-            case "3":
-                // Si es opción 3 --> multiplicar
+            resultado = operando1 - operando2;
+            System.out.printf("El resultado es %.2f", resultado);
+        } else if (opcion.equals("3")) {
+            // Si es opción 3 --> multiplicar
 
-                resultado = operando1 * operando2;
-                System.out.printf("El resultado es %.2f", resultado);
-                break;
-            case "4":
-                // Si es opción 4 --> dividir
+            resultado = operando1 * operando2;
+            System.out.printf("El resultado es %.2f", resultado);
+        } else if (opcion.equals("4")) {
+            // Si es opción 4 --> dividir
 
-                resultado = operando1 / operando2;
-                System.out.printf("El resultado es %.2f", resultado);
-                break;
-            default:
-                JOptionPane.showMessageDialog(null, "Opción incorrecta");
-                break;
+            resultado = operando1 / operando2;
+            System.out.printf("El resultado es %.2f", resultado);
+        } else {
+            JOptionPane.showMessageDialog(null, "Opción incorrecta");
         }
 
     }
