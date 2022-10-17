@@ -35,7 +35,10 @@ public class CalculadoraSwitch {
         // Lógica de la aplicación
         // Si es opción 1 --> sumar
         switch (opcion) {
-            case "1":
+            case "1","9","12":
+            case "10": // Antes se tenía que hacer así, ahora se puede poner con
+                       // comas
+            case "21":    
                 resultado = operando1 + operando2;
                 System.out.printf("El resultado es %.2f", resultado);
                 break;

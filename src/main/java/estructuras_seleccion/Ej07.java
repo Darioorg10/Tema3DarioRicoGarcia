@@ -40,7 +40,7 @@ public class Ej07 {
                 System.out.println("Introduzca la medida del lado del cuadrado");
                 ladoCuadrado = entrada.nextDouble();
                 areaCuadrado = (Math.pow(ladoCuadrado, 2));
-                System.out.println("El área del cuadrado es " + areaCuadrado + "unidades cuadradas");
+                System.out.println("El área del cuadrado es " + areaCuadrado + " unidades cuadradas");
                 break;
             case 2:
                 System.out.println("Ha seleccionado calcular el área de un triángulo...");
@@ -50,7 +50,7 @@ public class Ej07 {
                 alturaTriangulo = entrada.nextDouble();
                 areaTriangulo = ((baseTriangulo * alturaTriangulo) / 2);
                 System.out.println("El área del triángulo es de " + areaTriangulo
-                        + "unidades cuadradas");
+                        + " unidades cuadradas");
                 break;
             case 3:
                 System.out.println("Ha seleccionado calcular el área de un círculo...");
@@ -58,7 +58,7 @@ public class Ej07 {
                 radioCirculo = entrada.nextDouble();
                 areaCirculo = (Math.PI * Math.pow(radioCirculo, 2));
                 System.out.println("El área del círculo es de " + areaCirculo
-                        + "unidades cuadradas");
+                        + " unidades cuadradas");
                 break;
             default:
                 System.out.println("Ha seleccionado terminar");

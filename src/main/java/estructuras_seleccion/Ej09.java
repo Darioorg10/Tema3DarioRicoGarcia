@@ -33,9 +33,10 @@ public class Ej09 {
 
         System.out.println(variable2);
 
-        // Como vemos, la variable2 vale 100 ya que es el default, y no se ejecuta
-        // ninguno de los otros casos ya que dicen que variable2 tiene un valor
-        // que no tiene
+        // Como vemos, la variable2 vale 100 ya que es el default y es el último
+        // entonces al no haber break en el caso de que la variable valga 3 
+        // (que es lo que vale) termina en el último que es cuando la variable2
+        // vale 100
     }
 
 }

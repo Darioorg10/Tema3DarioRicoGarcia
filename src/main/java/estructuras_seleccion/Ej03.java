@@ -29,9 +29,15 @@ public class Ej03 {
      // siempre nos devolverá el valor que aparece primero en el operador ternario
      // que es el 100
 
+ // Apartado C
  
+//        int publico = 19500;
+//        int vendidas = 19000;
+//        int aforo = 2000;
+//        String status = (publico < aforo) ? "Cabe mas gente": (vendidas < aforo) ? 
+//        "Aun no hemos vendido todo" : "Esta todo vendido";
         
-        
+        // 
     }
     
 

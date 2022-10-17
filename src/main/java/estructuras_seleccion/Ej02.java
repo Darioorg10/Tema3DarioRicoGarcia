@@ -31,7 +31,13 @@ public class Ej02 {
         
         // Apartado C
         
+        int valorAbsoluto;
         
+        valorAbsoluto = (int) ((numero>=0)? numero : -numero); // Esto quiere decir
+        // "si el número es mayor que cero, devuelve número, y si el número es
+        // menor que cero, devuelve menos número, es decir, en valor positivo
+        // menos por menos es más
+        System.out.println("El valor absoluto es: " + valorAbsoluto);
         
         
     }
