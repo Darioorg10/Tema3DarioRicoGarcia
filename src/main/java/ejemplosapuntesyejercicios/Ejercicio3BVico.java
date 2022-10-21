@@ -32,6 +32,8 @@ public class Ejercicio3BVico {
         // Variables
         double precioMateriaPrima = 0;
         double costeProduccion = 0;
+        double precioVentaU = 0;
+        int unidadesParaBeneficio = 0;
         // Entradas
         // Código del dulce
         // Precio materia prima para producir una unidad
@@ -62,15 +64,31 @@ public class Ejercicio3BVico {
 
 
 
+//            double manoObra = ((codigoProducto.equals("M1")
+//                    || codigoProducto.equals("T1"))) ? MANO_OBRA_M1_T1:MANO_OBRA_M2_T2_P1;
+//            
+//            manoObra = switch(codigoProducto){
+//                case "T1","M1" -> MANO_OBRA_M1_T1;
+//                default -> MANO_OBRA_M2_T2_P1;    
+//            };
+
+            // Cálculo coste de producción   
             double manoObra = ((codigoProducto.equals("M1")
                     || codigoProducto.equals("T1"))) ? MANO_OBRA_M1_T1:MANO_OBRA_M2_T2_P1;
             
-            manoObra = switch(codigoProducto){
-                case "T1","M1" -> MANO_OBRA_M1_T1;
-                default -> MANO_OBRA_M2_T2_P1;    
-            };
-            
             costeProduccion = precioMateriaPrima + manoObra;
+                System.out.println("El coste de producción es " + costeProduccion);
+                
+            // Cálculo del precio venta unitario
+            double beneficio = manoObra = ((codigoProducto.equals("T2")
+                    || codigoProducto.equals("T1"))) ? BENEFICIO_T1_2:BENEFICIO_M1_M2_P1;
+            precioVentaU = costeProduccion + (beneficio*costeProduccion);
+            System.out.println("El precio venta es " + precioVentaU);
+            
+            beneficio = precioVentaU - costeProduccion;
+            unidadesParaBeneficio = (int)Math.ceil(BENEFICIO_VENTAS / beneficio);
+            
+                System.out.println("Unidades necesarias " + unidadesParaBeneficio);
             
             } else {
                 JOptionPane.showMessageDialog(null, "Precio no válido");
