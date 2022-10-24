@@ -13,7 +13,7 @@ public class Ej03 {
     public static void main(String[] args) {
         
         int numero = 15;
-        for (int i = 0; i<25; i++){
+        for (int i = 1; i<=25; i++){
         System.out.println(numero);
         numero=numero*2;
         }
